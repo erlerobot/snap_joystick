@@ -1,0 +1,17 @@
+name: joystick
+version: 1.0
+vendor: Víctor Mayoral <victor@erlerobot.com>
+summary: BT joystick
+description: A Bluetooth joystick for Erle-Spider
+icon: icon.png
+
+#binaries:
+#  godd:
+#    exec: ./bin/godd
+
+parts:
+  integration:
+    type: copy 
+    stage-packages: [bluetooth, joystick]
+    files:
+      one: one
